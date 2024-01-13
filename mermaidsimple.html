@@ -1,0 +1,85 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>MermaidJs Basic FlowChart</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+   
+  <style id="compiled-css" type="text/css">
+
+    /* https://mermaid.js.org/syntax/flowchart.html */
+      .mermaid-container {
+    overflow: auto;
+    max-height: 1000px; /* Adjust max-height as needed */
+    width: 100%; /* Adjust width as needed */
+  }
+
+
+  .edgeLabel {
+/*    background-color: #28a745; /* Background color for answers */
+  }
+
+.node rect, .node circle, .node ellipse, .node polygon {
+    fill: darkgrey;
+    stroke: #CCCCFF;
+    stroke-width: 1px;
+}
+
+
+  </style>
+
+  <script id="insert"></script>
+
+<meta id="dcngeagmmhegagicpcmpinaoklddcgon"></head>
+<body >
+    <div class="mermaid-container">
+<div class="mermaid">
+        graph TD
+          subgraph one
+            A[Evil exists?]-->|"`**Yes (bold)**`"| BD([Can God prevent evil?])
+            BD-->|No| C[[Then God is not all powerful]]
+            BD-->|Yes| F[Does God know about all the evil?]
+            end
+            F-->|No| D[Then God is not all-knowing]
+            F-->|Yes| G{{Does God want to prevent evil?}}
+            G-->|No| H((Then God is not loving))
+            G-.->|Yes| I[Then why is there evil?]
+            I-->|It is necessary for evil to exist| J["Could God (have) created a universe without these?"]
+            J==>|No| C
+            I-->|Another reason| J
+            I-->|To test us| K>If god is all-knowing, he would know what we would do if we were tested, therefore no need to test us.]
+            I-->|Satan| L{An all-powerful, all-knowing god could and would destroy satan.};
+            J-->|Yes| M[Then why didn't he?]
+            M-->|To test us| K
+            M-->|Free will| N[Could god have created a universe with free-will but without evil?]
+            N-->|Yes| M
+            N-->|No| C
+    </div>
+    </div>
+
+	
+
+<script type="text/javascript">
+
+
+
+  mermaid.initialize({
+    startOnLoad: true,
+    flowchart: {
+      useMaxWidth: false, // Prevent nodes from becoming smaller
+    },
+  });
+
+
+
+</script>
+
+
+
+
+
+</body></html>
